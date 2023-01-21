@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&family=PT+Serif:ital@1&family=Roboto+Slab&family=Rubik:ital@1&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/* font-family: 'Nunito Sans', sans-serif;
+
+font-family: 'PT Serif', serif;
+
+font-family: 'Roboto Slab', serif;
+
+font-family: 'Rubik', sans-serif; */

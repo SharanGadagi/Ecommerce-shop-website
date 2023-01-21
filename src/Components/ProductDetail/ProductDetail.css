@@ -1,0 +1,195 @@
+.productDetail{
+width: 100%;
+height: 100%;
+}
+.productDetail .pdContainer{
+display: flex;
+margin: 2rem 12rem;
+
+justify-content: center;
+gap: 8rem;
+}
+.pdContainer .productImage{
+flex: 2;
+/* border: 2px solid red; */
+box-shadow: 0 1rem 4rem rgba(0,0,0,0.1);
+cursor: pointer;
+height: max-content;
+}
+.productImage img{
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+.pdContainer .ProductInfo{
+flex: 2;
+margin-top: 35px;
+height: fit-content;
+
+
+}
+     
+.ProductInfo .pCategory{
+    
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background-color: rgb(199, 199, 200);
+    border: none;
+    outline: none;
+    color: rgb(3, 67, 97);
+}
+.ProductInfo .pTitle{
+margin-bottom: 2px;
+color: rgb(44, 44, 44);
+}
+.pRating{
+font-weight: bold;
+color: rgb(12, 100, 2);
+font-size: 1.2rem;
+margin-bottom: 35px;
+}
+.pdPrice{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+    justify-content: start;
+}
+.pPrice{
+/* color: white; */
+font-weight: bold;
+/* margin-bottom: 5rem; */
+}
+.pDesc{
+margin-top: 3.8rem;
+word-spacing: 2px;
+line-height: 25px;
+margin-bottom: 4rem;
+color: rgb(109, 106, 106);
+font-size: 1.1rem;
+text-align: start;
+}
+.ProductInfo .pdButton{
+display: flex;
+/* border: 2px solid green; */
+gap: 35px;
+text-align: center;
+}
+.pdButton .cart{
+    border:none;
+    outline: none;
+    padding: 12px 30px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(4, 69, 135, 0.927);
+    color: white;
+    
+
+}
+.pdButton .cart:hover{
+    background-color: rgb(23, 96, 168);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+@media screen and (max-width:768px) {
+    .productDetail{
+        width: 100%;
+        /* height: 100%; */
+        }
+        .productDetail .pdContainer{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0rem;
+        align-items: center;
+        justify-content: center;
+        gap: 0rem;
+        width: 100%;
+        }
+        .pdContainer .productImage{
+      /* flex: 0; */
+      width: 70%;
+      /* height: 250px; */
+      height: max-content;
+        /* border: 2px solid red; */
+        box-shadow: 0 1rem 4rem rgba(0,0,0,0.1);
+        cursor: pointer;
+       
+        }
+        .productImage img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        }
+        .pdContainer .ProductInfo{
+width: 90%;
+        margin-top: 35px;
+        height: fit-content;
+        
+        
+        }
+             
+        .ProductInfo .pCategory{
+            
+            padding: 10px 0;
+            font-weight: 600;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            background-color: rgb(199, 199, 200);
+            border: none;
+            outline: none;
+            color: rgb(3, 67, 97);
+        }
+        .ProductInfo .pTitle{
+        margin-bottom: 2px;
+        color: rgb(44, 44, 44);
+        }
+        .pRating{
+        font-weight: bold;
+        color: rgb(12, 100, 2);
+        font-size: 1.2rem;
+        margin-bottom: 35px;
+        }
+        .pdPrice{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            text-align: center;
+            justify-content: start;
+        }
+        .pPrice{
+        /* color: white; */
+        font-weight: bold;
+        /* margin-bottom: 5rem; */
+        }
+   
+        .ProductInfo .pdButton{
+        display: flex;
+  justify-content: space-between;
+        gap: 35px;
+        text-align: center;
+        }
+        .pdButton .cart{
+            border:none;
+            outline: none;
+            padding: 12px 25px;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: rgba(4, 69, 135, 0.927);
+            color: white;
+            
+        
+        }
+}

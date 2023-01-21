@@ -1,0 +1,146 @@
+.ShopNavbar{
+/* min-height: 100vh; */
+width: 100%;
+
+/* min-height: 100px; */
+}
+.ShopNavbar .navbarContain{
+  
+display: flex;
+align-items: center;
+justify-content: space-around;
+text-align: center;
+padding: 30px 0;
+
+
+
+}
+.navbarContain .navTitle{
+font-weight: bold;
+color: rgb(1, 33, 67);
+/* margin-left: 6rem; */
+}
+.navbarContain .navItems1{
+
+}
+.navItems1 ul.navUL{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    /* margin-left: 10rem; */
+} 
+ .navItems1 ul .navItem1{
+list-style-type: none;
+font-size: 21px;
+}
+.navItems1 ul .navItem1:hover{
+    color: rgb(116, 116, 116);
+}
+.navbarContain .navItems2{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    /* margin-left: 12rem; */
+    align-items: center;
+}
+.navItems2 .navBtn{
+border: none;
+outline: none;
+padding: 7px 21px;
+border-radius: 4px;
+text-align: center;
+cursor: pointer;
+font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 4px;
+}
+ .navItems2 .navLogin,.register{
+background-color: rgb(80, 190, 80);
+}
+.navItems2 .navLogin:hover{
+    background-color: rgb(80, 219, 80);  
+}
+.navItems2 .register:hover{
+    background-color: rgb(80, 219, 80);  
+}
+.navItems2 .cartBtn{
+    background-color: rgb(166, 222, 76); 
+    padding: 7px 21px;
+}
+.navItems2 .cartBtn:hover{
+    background-color: rgb(175, 239, 72); 
+
+}
+.mobileBar{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .ShopNavbar{
+     /* margin-right: 15rem; */
+     width: 100%;
+        
+        min-height: 100px;
+        position: relative;
+        }
+        .ShopNavbar .navbarContain{
+  
+      justify-content: space-between; 
+            
+      padding: 28px 0;
+      gap: 15px;
+            
+            }
+            .navItems1 ul .navItem1{
+                margin-bottom: 20px;
+                }
+         
+    .mobileBar{
+        display: block;
+        /* background-color: cadetblue; */
+        color: black;
+        /* font-size: 30px; */
+        position: absolute;
+        right: 20px;
+        top: 2px;  
+        /* bottom: 8px; */
+        border: none;
+    }
+    .mobile-nav{
+        position: absolute;
+        top: 0vh;
+        left: 0;
+        width: 100%;
+        background-color: rgb(193, 196, 196);
+        /* z-index: 2; */
+    }
+    .navbarContain .navItems1{
+/* display: none; */
+    }
+    .navItems1 ul.navUL{
+        display: none;
+    }
+    .navbarContain .navItems2{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-left: -15px;
+        align-items: center;
+    }
+    .navItems2 .navBtn{
+        border: none;
+        outline: none;
+        padding: 7px 5px;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        }
+
+}
